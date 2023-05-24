@@ -23,7 +23,7 @@ class MarkdownRecord
   end
 
   def self.find_or_create(attributes)
-    find(attributes) || create(attributes)
+    find_by_title(attributes[:title]) || create(attributes)
   end
 
   def self.find_by_title(title)

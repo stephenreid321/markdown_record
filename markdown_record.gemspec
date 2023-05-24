@@ -2,7 +2,7 @@ Gem::Specification.new do |gem|
   gem.name          = 'markdown_record'
   gem.description   = ''
   gem.summary       = ''
-  gem.version       = '0.0.1'
+  gem.version       = '0.0.2'
   gem.authors       = ['Stephen Reid']
   gem.email         = ['stephen@stephenreid.net']
   gem.require_paths = ['lib']
