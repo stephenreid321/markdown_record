@@ -54,5 +54,6 @@ CORRECTIONS = {
   'bitcoin grants' => 'gitcoin grants',
   'shelling point' => 'schelling point',
   'terapunk' => 'terrapunk',
-  'tara punk' => 'terrapunk'
+  'tara punk' => 'terrapunk',
+  'rival risk' => 'rivalrous'
 }
