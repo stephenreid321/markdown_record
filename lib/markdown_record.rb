@@ -102,6 +102,6 @@ class MarkdownRecord
       puts JSON.parse(openapi_response.body)
       body = JSON.parse(openapi_response.body)['choices'].first['text'].strip if JSON.parse(openapi_response.body)['choices']
     end
-    set_callout(attributes, 'example', 'See also', body.gsub('.','').split(', ').map { |t| "[[#{t.downcase}]]" }.join(', '))
+    set_callout(attributes, 'example', 'See also', body.gsub('.','').split(', ').map { |t| t.downcase }.reject { |t| t == attributes[:title] }.{ |t| "[[#{t}]]" }.join(', '))
   end
 end
